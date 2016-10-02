@@ -9,3 +9,4 @@
 - [ ] upload images?
 - [ ] make responsive
 - [ ] use flow
+- [ ] propTypes
