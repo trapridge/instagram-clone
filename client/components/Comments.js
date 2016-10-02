@@ -2,6 +2,12 @@ import React from 'react'
 import Raven from 'raven-js'  
 
 export default class Comments extends React.Component {
+  static propTypes = {
+    postComments: React.PropTypes.array.isRequired,
+    addComment: React.PropTypes.func.isRequired,
+    removeComment: React.PropTypes.func.isRequired,
+  }
+
   render() {
     return (
       <div className="comments">

@@ -3,6 +3,10 @@ import React from 'react'
 import Photo from './Photo'
 
 export default class PhotoGrid extends React.Component {
+  static propTypes = {
+    posts: React.PropTypes.array
+  }
+
   render() {
     return (
       <div className="photo-grid">

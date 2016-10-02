@@ -3,6 +3,13 @@ import { Link } from 'react-router'
 import CSSTransitionGroup from 'react-addons-css-transition-group'
 
 export default class Photo extends React.Component {
+  static propTypes = {
+    i: React.PropTypes.number.isRequired,
+    post: React.PropTypes.object.isRequired,
+    comments: React.PropTypes.object.isRequired,
+    increment: React.PropTypes.func.isRequired
+  }
+
   render() {
     const { post, comments, i } = this.props
     return (

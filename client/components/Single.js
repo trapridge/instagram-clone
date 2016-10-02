@@ -4,6 +4,12 @@ import Photo from './Photo'
 import Comments from './Comments'
 
 export default class Single extends React.Component {
+  static propTypes = {
+    params: React.PropTypes.object.isRequired,
+    posts: React.PropTypes.array,
+    comments: React.PropTypes.object
+  }
+
   render() {
     const id = this.props.params.postId
     const index = this.props.posts.findIndex(post => post.code === id)

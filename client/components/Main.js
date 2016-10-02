@@ -9,7 +9,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <div>
-        <h1><Link to="/">Lolz</Link></h1>
+        <h1><Link to="/">Instagram clone</Link></h1>
         {React.cloneElement(this.props.children, this.props)}
       </div>
     )
