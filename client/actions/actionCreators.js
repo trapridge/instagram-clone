@@ -18,3 +18,17 @@ export function removeComment(postId, commentId) {
     postId, commentId
   }
 }
+
+function epicAlert() {
+  return {
+    type: 'EPIC_ALERT'
+  }
+}
+
+export function asyncEpicAlert() {
+  return dispatch => {
+    setTimeout(() => {
+      dispatch(epicAlert())
+    }, 2000)
+  }
+}
