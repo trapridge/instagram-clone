@@ -4,7 +4,7 @@ export function epic(state = [], action) {
       console.log('epic')
       alert('epic')
       return state
-    default: 
+    default:
       return state
   }
 }

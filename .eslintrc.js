@@ -20,7 +20,6 @@ module.exports = {
         "indent": [
             "error",
             2
-
         ],
         "linebreak-style": [
             "error",
@@ -34,6 +33,6 @@ module.exports = {
             "error",
             "never"
         ],
-        "no-unused-vars": false
+        "no-unused-vars": 0
     }
 };

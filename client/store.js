@@ -1,7 +1,7 @@
 import { applyMiddleware, createStore, compose } from 'redux'
 import { syncHistoryWithStore } from 'react-router-redux'
 import { browserHistory } from 'react-router'
-import thunk from 'redux-thunk';
+import thunk from 'redux-thunk'
 
 import { rootReducer } from './reducers/index'
 
@@ -12,7 +12,7 @@ const defaultState = { posts, comments }
 
 let middleware = applyMiddleware(thunk)
 if (process.env.NODE_ENV !== 'production' && window.devToolsExtension) {
-   middleware = compose(middleware, window.devToolsExtension())
+  middleware = compose(middleware, window.devToolsExtension())
 }
 
 export const store = createStore(rootReducer, defaultState, middleware)

@@ -11,7 +11,7 @@ export default class Main extends React.Component {
       <div>
         <h1><Link to="/">Instagram clone</Link></h1>
         {React.cloneElement(this.props.children, this.props)}
-        <button onClick={this.props.asyncEpicAlert}>Alert</button>
+        {/*<button onClick={this.props.asyncEpicAlert}>Alert</button>*/}
       </div>
     )
   }

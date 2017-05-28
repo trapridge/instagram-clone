@@ -1,10 +1,12 @@
 # TODO
 
-- [ ] persist with firebase
+- [ ] update deps to same as cotd
+- [ ] update devDeps & setup to same as cotd
+- [ ] persist comments with firebase
 - [ ] authenticate & personalize with firebase
 - [ ] immutable.js
-- [ ] add use case for rx.js and use it
 - [ ] unit tests
+- [ ] e2e tests
 - [ ] load images from e.g. flickr
 - [ ] upload images?
 - [ ] make responsive
